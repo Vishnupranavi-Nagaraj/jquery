@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideDown("slow");  
+    });  
+     $("#flip").click(function(){  
+        $("#panel").slideUp();  
+    });
+    $("#flip").click(function(){  
+        $("#panel").slideToggle("slow");  
+    });
+     $("button").click(function(){  
+        $("p").delay("slow").animate({
+            height:'toggle'
+        });  
+    }); 
+});  
+</script>  
+ <style>   
+#panel, #flip {  
+    padding: 5px;  
+    text-align: center;  
+    background-color: green;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display: none;
+}  
+</style>  
+</head>  
+<body>  
+<div id="flip">Click</div>  
+<div id="panel">Hello,Magento2 is e-commerece platform</div>  
+<p>Loop begins,content will be hidden</p>
+<button>Click</button>
+
+</body>  
+</html> 
+
+ 

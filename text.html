@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+	<script>
+		$(document).ready(function(){
+			$("#text").click(function(){
+				$("p").html("Thank you");  
+
+			});
+			$("#val").click(function(){
+				alert($("#test").val());
+			});
+			$("#attr").click(function(){
+				alert($("#mozilla").attr("href"));
+			});
+
+		});
+	</script>
+</head>
+<body>
+<p>you are</p>
+<p>Always welcome</p>
+<button id ="text">click to change</button>
+<p id="name">Name: <input type="text" id="test" value="Pranavi"></p>
+
+<button id="val">Show Value</button>
+<p><a href="https://en.wikipedia.org/wiki/Mozilla" id="mozilla">Mozilla</a></p>
+
+<button id="attr">Href Value</button>
+
+</body>
+</html>

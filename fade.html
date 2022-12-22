@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#fadein").click(function(){
+				$("p").fadeIn(1000);
+			   });  
+			$("#fadeout").click(function(){
+				$("p").fadeOut(3000);
+			   });
+			$("#toggle").click(function(){
+    			$("p").fadeToggle("slow",function(){
+   				 alert("This is callbacks");
+ 				 });
+  			});
+	});  
+		</script>
+</head>
+<body>
+	<p style="width:1000px;height:100px;display:none;background-color:red;">Welcome to</p>
+	<p style="width:1000px;height:100px;display:none;background-color:green;">Aspire systems</p>
+	<p style="width:1000px;height:100px;display:none;background-color:blue;">We are one</p>
+	
+	<button id="fadein">Fadein</button>
+	<button id="fadeout">Fadeout</button>
+	<button id= "toggle">Toggle</button>
+
+</body>
+</html>

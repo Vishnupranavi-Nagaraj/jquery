@@ -1,1 +1,1 @@
-# jquery
+jquery is a lightweight,advanced than javascript
