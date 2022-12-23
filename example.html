@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+  $("button").click(function(){  
+    $.ajax({  
+      url: 'http://localhost/jquery/test.html',  
+      type: 'GET',  
+      async: false,  
+      success: function(data) {  
+          $("#para").html(data);                
+      }  
+  });  
+  });  
+});  
+</script>  
+</head>  
+<body>  
+  
+<h3> People are multi-minded </h3>  
+<h4> We need to adapt </h4>  
+<button> Click me </button>  
+<p id = "para"></p>  
+  
+</body>  
+</html>  
