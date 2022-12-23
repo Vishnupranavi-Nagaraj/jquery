@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){  
+    			$("#btn1").click(function(){  
+        		alert($("#div1").width());  
+        		alert($("#div1").height()); 
+    		});  
+    			$("#btn2").click(function(){  
+        		alert($("#div1").innerWidth());  
+        		alert($("#div1").innerHeight()); 
+    		});  
+    			$("#btn3").click(function(){  
+        		alert($("#div1").outerWidth());  
+        		alert($("#div1").outerHeight()); 
+    		});  
+		});
+		</script>
+
+</head>
+<body>
+	<div id="div1" style="height:200px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:orange;">
+	</div>
+	
+	<button id="btn1">Width and height</button>  
+	<button id="btn2">innerWidth and innerheight</button>  
+	<button id="btn3">outerWidth and outerheight</button>  
+
+</body>
+
+</body>
+</html>
