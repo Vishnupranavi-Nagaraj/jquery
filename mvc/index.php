@@ -10,5 +10,5 @@ require_once 'View.php';
 /**
  * instantiate the controller class and calling action method
  */
-$Controller = new Controller();
-$Controller->Action();
+$controller = new Controller();
+$controller->action();

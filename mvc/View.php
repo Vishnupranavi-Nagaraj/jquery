@@ -4,19 +4,17 @@
  */
 class View
 {
+    public function __construct()
+    {
+        $this->model = new Model();
+    }
+
     /**
      * send method view the data from the controller
      * @param $data
      */
-    public function send($data) {
-        echo $data;
-    }
-
-    /**
-     * receive method view the data from the controller
-     * @param $data 
-     */
-    public function receive($data) {
-        echo $data;
+    public function send()
+    {
+        echo $this->model->add($x,$y);
     }
 }

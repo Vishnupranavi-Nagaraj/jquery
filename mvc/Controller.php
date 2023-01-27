@@ -4,24 +4,22 @@
  */
 class Controller
 {
-    /**variable $model*/
-    public $model;
     /**variable $view*/
     public $view;
 
     /**
      * construct method can automatically instance the object when the class is called
      */
-    public function __construct() {
-        $this->model = new Model();
+    public function __construct() 
+    {
         $this->view = new View();
     }
 
     /**
      * Action method send a model logics inside the view methods
      */
-    public function Action() {
-        $this->view->send($this->model->add($x,$y));
-        $this->view->receive($this->model->multiplication($z,$y));
+    public function action() 
+    {
+        $this->view->send();
     }
 }
