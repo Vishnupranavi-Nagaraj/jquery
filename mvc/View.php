@@ -4,6 +4,9 @@
  */
 class View
 {
+    /**
+     * creating object for a model
+     */
     public function __construct()
     {
         $this->model = new Model();
@@ -11,7 +14,6 @@ class View
 
     /**
      * send method view the data from the controller
-     * @param $data
      */
     public function send()
     {

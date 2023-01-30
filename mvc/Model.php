@@ -11,9 +11,9 @@ class Model
 
     /**
      * add method is used for add and send to view through controller
-     * @param $x
-     * @param $y
-     * @return int
+     * @param int $x
+     * @param int $y
+     * @return int (sum) 
      */
     public function add($x,$y)
     {
